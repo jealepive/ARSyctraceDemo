@@ -2,6 +2,7 @@
 <html>
 <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/1.7.5/aframe/build/aframe-ar.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.1/dist/aframe-extras.min.js"></script>
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>  
       <a-assets>
@@ -11,9 +12,10 @@
       </a-assets>      
       
   	<a-marker type='barcode' value='6'>
-      <a-text value="El código de la estampilla que consultó corresponde a SMIRNOFF ICE GREEN APPLE BEBIDA ALCOHOLICA MIXTA DE VODKA CON EL SABOR DE MANZA 3,96° de 250 Ml. Autorizado para SANTANDER." position = '-3.5 0 0' rotation="-90 0 0"></a-text>     
+      <!-- <a-text value="El código de la estampilla que consultó corresponde a SMIRNOFF ICE GREEN APPLE BEBIDA ALCOHOLICA MIXTA DE VODKA CON EL SABOR DE MANZA 3,96° de 250 Ml. Autorizado para SANTANDER." position = '-3.5 0 0' rotation="-90 0 0"></a-text>      -->
       <!-- <a-box position='0 0.5 0' material='color: red;'></a-box>       -->
-      <a-entity gltf-model="#syctraceText" color= "green" scale="1 1 1" position= "-3.5 0 -2" rotation="-90 0 0" animation="property: rotation; to: -90 0 360; loop: true; dur: 10000"></a-entity>
+      <!-- <a-entity gltf-model="#earthHolo" scale="1 1 1" position= "-3.5 0 -2" rotation="-90 0 0" animation="property: rotation; to: -90 0 360; loop: true; dur: 10000"></a-entity> -->
+      <a-entity gltf-model="#earthHolo" scale="1 1 1" position= "-3.5 0 -2" animation-mixer></a-entity>
   	</a-marker>
   	<a-entity camera></a-entity>
        
